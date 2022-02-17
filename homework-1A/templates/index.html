@@ -8,35 +8,7 @@
     <meta name="description" content="Bennie's introductory assignment for the CSM course Mobile Web App Development">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                var hOne = $("h1");
-                var img = $("img");
-                hOne.animate({
-                    fontSize: '5rem'
-                }, 5000);
-                hOne.css({
-                    'color': 'red'
-                });
-                hOne.animate({
-                    fontSize: '2rem'
-                }, 5000, function() {
-                    hOne.css({
-                        'color': 'black'
-                    });
-                    img.css({
-                        "border": 'none'
-                    });
-                });
-                img.css({
-                    "border": 'black 2px solid'
-                });
-            });
-
-
-        });
-    </script>
+    <script src="../js/main.js"></script>
     <title>Introduction to CIS-128</title>
 </head>
 
@@ -65,5 +37,6 @@
         </ul>
     </div>
 </body>
+<button onclick="document.location='../../index.html'">home</button>
 
 </html>
